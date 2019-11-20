@@ -11,7 +11,7 @@ Follow jswatchdog. <br/>
 
 ## License
 
-Follow by jswatchdog. <br/>
+Follow jswatchdog. <br/>
 
 > * jswatchdog - MIT Licence
 > * ESLint - MIT License
