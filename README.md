@@ -1,7 +1,7 @@
 # dojo-jswatchdog
 
 Auto review tool for kintone JS customization for kintone dojo. <br/>
-Fork by [jswatchdog](https://github.com/kintone/jswatchdog)
+Clone [jswatchdog](https://github.com/kintone/jswatchdog)
 
 ## Copyright
 
