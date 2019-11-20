@@ -7,7 +7,7 @@
 
 <style>
 html, body {
-  height: 110vh;
+  height: 115vh;
   background-color:#00000007;
 }
 
@@ -97,29 +97,30 @@ iframe {
 .explain {
   font-size: 2vw;
 }
-.dojo {
+.dojo-title {
+  position: absolute;
+  top: 1vh;
+  left: 25vw;
   font-size: 3vw;
   text-align: center;
   color: #ffbf00;
   text-shadow: 2px 2px 0 #000;
   margin: 1vh 0 3vh 0;
 }
-.dojo-text {
+.dojo-leftop {
+  padding: 1vw;
+}
+.dojo-hilight {
   font-size: 1.2em;
   margin: 0 0 0 1vw;
   color: #000;
   text-shadow: 2px 2px 0 #ffbf00;
 }
-.dojo-subtitle {
-  position: absolute;
-  left: 1vw;
+.dojo-indent {
   font-size: 1.3vw;
   font-family: zapfino;
 }
 .dojo-link {
-  position: absolute;
-  top: 8vh;
-  left: 1.5vw;
   font-size: 1vw;
   cursor: pointer;
 }
@@ -127,11 +128,11 @@ iframe {
 </style>
 </head>
 <body>
-  <h1 class="dojo">kintone dojo 用 <span class="dojo-text">jswatchdog</span></h1>
-  <p class="dojo-subtitle">indent size <span class="dojo-text">2</span> ver.</p>
-  <p class="dojo-link">
-    <a href="https://cybozu.co.jp">change indent size</a>
-  </p>
+  <div class="dojo-leftop">
+    <div class="dojo-indent">indent size <span class="dojo-hilight">2</span> ver.</div>
+    <div class="dojo-link"><a href="https://cybozu.co.jp">change indent size</a></div>
+  </div>
+  <h1 class="dojo-title">kintone dojo 用 <span class="dojo-hilight">jswatchdog</span></h1>
   <main>
     <div class="part1">
       <h2 class="explain">
@@ -139,14 +140,14 @@ iframe {
       </h2>
       <div class="io">
         <div id="input">(function() {
-  'use strict';
+    'use strict';
 
-  kintone.events.on('app.record.index.show', function(event) {
-    const header = kintone.app.getHeaderMenuSpaceElement();
-    const button = document.createElement('button');
-    button.textContent = event.records[0]['hoge'].value;
-    header.appendChild(button);
-  });
+    kintone.events.on('app.record.index.show', function(event) {
+        var header = kintone.app.getHeaderMenuSpaceElement();
+        var button = document.createElement('button');
+        button.textContent = event.records[0]['hoge'].value;
+        header.appendChild(button);
+    });
 })();
 </div>
       </div>
@@ -160,6 +161,9 @@ iframe {
       </div>
     </div>
   </main>
+  <div class="dojo-link">
+    <a href="https://github.com/RyBB/dojo-jswatchdog-4" target="_brank">GitHub</a>
+  </div>
   <script src="vendor/eslint.js"></script><!-- TODO browserifyとかでやりたい -->
   <script src="bower_components/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
   <script src="build/bundle.js"></script>
