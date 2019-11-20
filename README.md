@@ -1,7 +1,22 @@
 # dojo-jswatchdog
 
 Auto review tool for kintone JS customization for kintone dojo. <br/>
-Clone [jswatchdog](https://github.com/kintone/jswatchdog).
+
+https://rybb.github.io/dojo-jswatchdog-2/ <br/>
+
+※ Clone [jswatchdog](https://github.com/kintone/jswatchdog).
+
+## Another Version
+
+Tab size of 4 spaces is here.
+https://github.com/RyBB/dojo-jswatchdog-4
+
+## Change point
+
+- eslintconfig.js
+  - "indent": [2, 2, {"SwitchCase": true}] / "indent": [2, 4, {"SwitchCase": true}]
+- main.js
+  - editor.getSession().setTabSize(2) / editor.getSession().setTabSize(4)
 
 ## Copyright
 
