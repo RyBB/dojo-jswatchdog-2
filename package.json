@@ -1,0 +1,27 @@
+{
+  "name": "jswatchdog",
+  "version": "1.0.0",
+  "description": "Auto review tool for kintone JS customization.",
+  "dependencies": {
+    "eslint": "^6.6.0",
+    "jshint": "^2.8.0",
+    "lodash": "^3.10.1"
+  },
+  "devDependencies": {
+    "browserify": "^11.0.1",
+    "gulp": "^3.9.0",
+    "gulp-bower": "0.0.10",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "update-eslint": "./bin/update-eslint.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kintone/jswatchdog.git"
+  },
+  "author": "ama-ch <amach97@gmail.com>",
+  "license": "MIT"
+}
