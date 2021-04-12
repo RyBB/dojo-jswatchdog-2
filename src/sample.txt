@@ -1,0 +1,11 @@
+(() => {
+  'use strict';
+
+  kintone.events.on('app.record.index.show', (event) => {
+    const sampleFieldCode = 'hoge';
+    const header = kintone.app.getHeaderMenuSpaceElement();
+    const button = document.createElement('button');
+    button.textContent = event.records[0][sampleFieldCode].value;
+    header.appendChild(button);
+  });
+})();

@@ -1,50 +1,33 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-<meta charset="utf-8">
-<title>dojo-jswatchdog-indent2</title>
-<link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dojo-jswatchdog</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <div class="dojo-leftop">
-    <div class="dojo-indent">indent size <span class="dojo-hilight">2</span> ver.</div>
-    <div class="dojo-link"><a href="https://rybb.github.io/dojo-jswatchdog-4/">change indent size</a></div>
+  <div class="maintitle">
+    <div class="title">kintone dojo用 jswatchdog</div>
   </div>
-  <h1 class="dojo-title">kintone dojo 用 <span class="dojo-hilight">jswatchdog</span></h1>
-  <main>
-    <div class="part1">
-      <h2 class="explain">
-        Enter your JS code here
-      </h2>
-      <div class="io">
-        <div id="input">(function() {
-  'use strict';
-
-  kintone.events.on('app.record.index.show', function(event) {
-    const header = kintone.app.getHeaderMenuSpaceElement();
-    const button = document.createElement('button');
-    button.textContent = event.records[0]['hoge'].value;
-    header.appendChild(button);
-  });
-})();
-</div>
+  <div class="container">
+    <div id="input">
+      <div class="header">
+        <p class="title">Enter your JS code here</p>
       </div>
+      <div id="editor"></div>
     </div>
-    <div class="part2">
-      <h2 class="explain">
-        Review result
-      </h2>
-      <div class="io">
-        <div id="output"></div>
+    <div id="output">
+      <div class="header">
+        <p class="title">Review result</p>
       </div>
+      <div id="console"></div>
     </div>
-  </main>
-  <div class="dojo-link">
-    <a href="https://github.com/RyBB/dojo-jswatchdog-2" target="_brank">GitHub</a>
   </div>
-  <script src="vendor/eslint.js"></script><!-- TODO browserifyとかでやりたい -->
-  <script src="bower_components/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
-  <script src="build/bundle.js"></script>
+  <script src="//js.cybozu.com/ace/v1.4.1/ace.js"></script>
+  <script src="//js.cybozu.com/ace/v1.4.1/ext-language_tools.js"></script>
+  <script src="dist/config.js"></script>
+  <script src="dist/bundle.js"></script>
 </body>
 </html>
