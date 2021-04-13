@@ -10,6 +10,7 @@ module.exports = {
     "xss/no-location-href-assign": 2,
     "arrow-parens": 2,
     "arrow-spacing": 1,
+    "prefer-arrow-callback": 0,
   },
   "parserOptions": {
     "ecmaVersion": 2020
