@@ -2675,6 +2675,11 @@
   "resolved" "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz"
   "version" "1.0.5"
 
+"escape-string-regexp@^4.0.0":
+  "integrity" "sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA=="
+  "resolved" "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz"
+  "version" "4.0.0"
+
 "eslint-config-prettier@^7.2.0":
   "integrity" "sha512-rV4Qu0C3nfJKPOAhFujFxB7RMP+URFyQqqOZW9DMRD7ZDTFyjaIlETU3xzHELt++4ugC0+Jm084HQYkkJe+Ivg=="
   "resolved" "https://registry.npmjs.org/eslint-config-prettier/-/eslint-config-prettier-7.2.0.tgz"
@@ -2883,13 +2888,14 @@
     "text-table" "^0.2.0"
     "v8-compile-cache" "^2.0.3"
 
-"eslint4b@^7.8.1":
-  "integrity" "sha512-+x7HMeinw27x+jVpkOfhUHK0ugrbAOufk3yKjOC6FGBtnBPZjGPELVkXcSBeCeW1nT7uokh9CsuxwMlIn0AddA=="
-  "resolved" "https://registry.npmjs.org/eslint4b/-/eslint4b-7.23.0.tgz"
-  "version" "7.23.0"
+"eslint4b@^7.29.0":
+  "integrity" "sha512-OEQEg5Bfbel4NNPgGFJ6sjnLfJRFSYXssFf1F+lsxvLZ8msmMF00syFmDEFU1nRvsRxiEW/Aj27IIMN+6ClY3A=="
+  "resolved" "https://registry.npmjs.org/eslint4b/-/eslint4b-7.29.0.tgz"
+  "version" "7.29.0"
   dependencies:
     "debug" "^4.0.1"
     "doctrine" "^3.0.0"
+    "escape-string-regexp" "^4.0.0"
     "eslint-scope" "^5.1.1"
     "eslint-utils" "^2.1.0"
     "eslint-visitor-keys" "^2.0.0"
@@ -2900,7 +2906,7 @@
     "globals" "^13.6.0"
     "ignore" "^4.0.6"
     "levn" "^0.4.1"
-    "lodash" "^4.17.21"
+    "lodash.merge" "^4.6.2"
     "natural-compare" "^1.4.0"
     "regexpp" "^3.1.0"
 
@@ -4351,6 +4357,11 @@
   "integrity" "sha1-8xwiIlqWMtK7+OSt2+8kCqdlph8="
   "resolved" "https://registry.npmjs.org/lodash.flatten/-/lodash.flatten-4.4.0.tgz"
   "version" "4.4.0"
+
+"lodash.merge@^4.6.2":
+  "integrity" "sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ=="
+  "resolved" "https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz"
+  "version" "4.6.2"
 
 "lodash.truncate@^4.4.2":
   "integrity" "sha1-WjUNoLERO4N+z//VgSy+WNbq4ZM="

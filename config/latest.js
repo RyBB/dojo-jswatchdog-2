@@ -1,6 +1,5 @@
 module.exports = {
   extends: ['@cybozu', '@cybozu/eslint-config/globals/kintone'],
-  plugins: ['xss'],
   globals: {
     garoon: true,
     axios: true,
