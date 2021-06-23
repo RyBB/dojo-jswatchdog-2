@@ -20,6 +20,7 @@ window.eslintConfigs = {
       'arrow-spacing': [1],
       'prefer-arrow-callback': [0],
       'default-param-last': ['error'],
+      'keyword-spacing': ['error'],
       'no-caller': ['error'],
       'no-eval': ['error'],
       'no-floating-decimal': ['error'],
@@ -51,6 +52,7 @@ window.eslintConfigs = {
       'no-multi-str': ['warn'],
       'no-param-reassign': ['warn'],
       'no-script-url': ['warn'],
+      'no-spaced-func': 2,
       'no-unmodified-loop-condition': ['warn'],
       'no-useless-return': ['warn'],
       'prefer-const': [
@@ -82,6 +84,7 @@ window.eslintConfigs = {
       'semi-spacing': ['warn'],
       'semi-style': ['warn'],
       'space-before-blocks': ['warn'],
+      'space-infix-ops': ['warn'],
       'space-before-function-paren': [
         'warn',
         { anonymous: 'never', named: 'never', asyncArrow: 'always' },

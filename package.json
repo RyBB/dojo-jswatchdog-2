@@ -6,7 +6,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "node bin/build-config.js ; webpack --mode production",
+    "build": "webpack --mode production",
     "start": "webpack-dev-server",
     "watch": "webpack --mode development --watch",
     "build-config": "node bin/build-config.js"
