@@ -18,6 +18,7 @@ window.eslintConfigs = {
       'xss/no-location-href-assign': [2],
       'arrow-parens': [2],
       'arrow-spacing': [1],
+      'comma-spacing': ['error'],
       'prefer-arrow-callback': [0],
       'default-param-last': ['error'],
       'keyword-spacing': ['error'],
